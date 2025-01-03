@@ -1,0 +1,11 @@
+version = 0.1
+[default.deploy.parameters]
+stack_name = "inventarios-sam-app"
+resolve_s3 = false
+s3_prefix = "inventarios-sam-app"
+region = "eu-west-2"
+confirm_changeset = false
+capabilities = "CAPABILITY_IAM"
+disable_rollback = true
+parameter_overrides = "PostgresUsername=\"postgres\" PostgresPassword=\"1234512345\" PostgresDatabaseName=\"inventarios\""
+image_repositories = []
